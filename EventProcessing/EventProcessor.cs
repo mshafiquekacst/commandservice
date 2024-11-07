@@ -64,7 +64,7 @@ namespace CommandService.EventProcessing
             Console.WriteLine($"--> Determining Event Type for: {eventData.Event}");
             return eventData.Event switch
             {
-                "Platform_Published " => EventType.PlatformPublished,
+                "Platform_Published" => EventType.PlatformPublished,
                 _ => EventType.Undetermined
             };
         }
